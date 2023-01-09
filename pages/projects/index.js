@@ -11,13 +11,15 @@ const Projects = ({ data }) => {
     <Container maxW={"100%"} bgColor="gray.300" pt={5}>
       <Center>
         <Grid templateColumns="repeat(2, 1fr)" gap={6}>
-        {itm.map((el) => (
+          {itm.map((el) => (
             <Box key={el.id} bgColor="gray.400" padding={20}>
               <Text textAlign={"center"}>Name: {el.name}</Text>
               <Text textAlign={"center"}>Language: {el.language}</Text>
-              <Link href={el.forks_url} ><Text textAlign={"center"}>Fork</Text></Link>
+              <Link href={el.forks_url}>
+                <Text textAlign={"center"}>Fork</Text>
+              </Link>
             </Box>
-        ))}
+          ))}
         </Grid>
       </Center>
     </Container>
