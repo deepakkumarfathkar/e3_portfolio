@@ -4,7 +4,7 @@ import { Inter } from "@next/font/google";
 import { Box, Button, Center, Flex, Image, Text } from "@chakra-ui/react";
 
 const inter = Inter({ subsets: ["latin"] });
-const username = "deepakkumarfathkar";
+export const username = "deepakkumarfathkar";
 
 export default function Home({ data }) {
   return (
